@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Duck Dashboard</title>
+</head>
+<body>
+	<h1>FLOCK OF DUCKS!</h1>
+	<hr>
+	<% for(duck in ducks) {%>
+		Duck Name: <%= ducks[duck].name %><br>
+		Color: <%= ducks[duck].color %><br>
+		<a href="/ducks/<%= ducks[duck]._id %>">Details</a>
+		<a href="/ducks/<%= ducks[duck]._id %>/edit">Edit</a>
+		<a href="/ducks/<%= ducks[duck]._id %>/destroy">Shoot this duck!</a>
+		<hr>
+	<% } %>
+	<a href="/ducks/new">Add a duck</a>
+
+</body>
+</html>

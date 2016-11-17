@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit <%= duck.name %></title>
+</head>
+<body>
+	<h1>Edit <%= duck.name %> the duck's details!</h1>
+	<hr>
+	<form action="/<%=duck.id%>" method="post">
+		Name: <input type="text" name="name">
+		Color: <input type="text" name="color">
+		<input type="submit" name="submit">
+	</form>
+	<br>
+	<a href="/">Cancel</a>
+</body>
+</html>
